@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: 'Montserrat';
+
+}
+
+.div-principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px;
+  background: #000000;
+}
+
+.div-principal h1 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 49px;
+
+}
+
+.div-principal p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 10px;
+}
+
+.div-principal button {
+  background: #B01316;
+  width: 310px;
+  height: 50px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 40px;
+
+}
+
+.div-principal span {
+  color: #E2181A;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 49px;
+}
+
+.div-principal button:hover {
+  opacity: 0.6;
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.container-grafico {
+  border-width: 2px 0px;
+  border-style: solid;
+  border-color: #E2181A;
+  margin-top: -70px;
+  background: #0C0B0B;
+}
+
+.title {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  text-transform: uppercase;
+}
+
+.grafico {
+  display: flex;
+  justify-content: center;
+  gap: 140px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.grafico p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.grafico div {
+  text-align: center;
+}
+
+.container-module {
+  padding: 70px;
+  background: #0C0B0B;
+}
+
+.container-module h2 {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.container-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+
+
+
+
+}
+
+.box-1 {
+
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 81.77%),
+    url(./assets/strong-bodybuilder-posing-and-showing-muscles1.svg);
+  width: 310px;
+  height: 400px;
+}
+
+.box-2 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 81.77%),
+    url(./assets/strong-bodybuilder-posing-and-showing-muscles1.svg);
+  width: 310px;
+  height: 400px;
+}
+
+.box-3 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 81.77%),
+    url(./assets/strong-bodybuilder-posing-and-showing-muscles1.svg);
+  width: 310px;
+  height: 400px;
+}
+
+.box-4 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 81.77%),
+    url(./assets/strong-bodybuilder-posing-and-showing-muscles1.svg);
+  width: 310px;
+  height: 400px;
+}
+
+.box-1,
+.box-2,
+.box-3,
+.box-4 {}
+
+.container-box button {
+  background: #B01316;
+  border-radius: 20px;
+  height: 30px;
+  width: 180px;
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+}
+
+.container-box button:hover{
+  opacity: 0.6g;
+}
