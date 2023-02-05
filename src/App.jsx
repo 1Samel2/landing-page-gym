@@ -225,14 +225,33 @@ function App() {
 
       <div className="container-questions">
         <div>
-          <p>faq</p>
-          <p>Perguntas Frequentes:</p>
+          <div>
+            <div class="top-text">Faq</div>
+          </div>
+          <p className="fre">Perguntas Frequentes:</p>
         </div>
 
-        <div>
-          <summary>
-            <details>Qual tempo de participação do método?</details>
-          </summary>
+        <div className="box-sumary">
+          <details>
+            <summary>Qual tempo de participação do método?</summary>
+            <p>Epcot is a theme park at Walt Disney World Resort</p>
+          </details>
+          <details>
+            <summary>Quais formas de pagamento?</summary>
+            <p>Epcot is a theme park at Walt Disney World Resort</p>
+          </details>
+          <details>
+            <summary>
+              Nunca pratiquei exercícios físicos, posso participar?
+            </summary>
+            <p>Epcot is a theme park at Walt Disney World Resort</p>
+          </details>
+          <details>
+            <summary>
+              Estou acima do peso, consigo acompanhar os módulos?
+            </summary>
+            <p>Epcot is a theme park at Walt Disney World Resort</p>
+          </details>
         </div>
       </div>
     </main>

@@ -411,7 +411,34 @@
   margin-top: 20px;
 }
 
-.container-questions{
+.container-questions {
   background: #000000;
   display: flex;
+  justify-content: center;
+  gap: 150px;
+  padding-bottom: 100px;
+}
+
+
+summary {
+  border-bottom: 1px solid #2C0406;
+  margin-bottom: 20px;
+}
+
+.top-text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 150px;
+  line-height: 183px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.1);
+  position: absolute;
+}
+
+.fre {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 39px;
+  margin-top: 20%;
 }
