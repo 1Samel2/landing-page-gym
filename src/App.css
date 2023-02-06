@@ -417,6 +417,7 @@
   justify-content: center;
   gap: 150px;
   padding-bottom: 100px;
+  padding-top: 50px;
 }
 
 
@@ -441,4 +442,78 @@ summary {
   font-size: 30px;
   line-height: 39px;
   margin-top: 20%;
+}
+
+
+.paragraph-sumary {
+  font-style: normal;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 20px 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 50ch;
+  /*  max-height: 200px;
+  overflow-y: auto; */
+}
+
+.box-content {
+  width: 307px;
+  height: 315px;
+  border-bottom: 1px solid #B01316;
+
+  background: #0C0B0B;
+
+  border-bottom: 2px solid #E2181A;
+  border-radius: 4px;
+
+}
+
+.align-text-img {
+  display: flex;
+  align-items: center;
+
+}
+
+.align-text-img img {
+  padding: 20px;
+}
+
+
+
+.text-slider {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-slider span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #E2181A;
+}
+
+
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  color: #B01316;
+}
+
+.swiper-pagination-bullet{
+  background: white;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  background: #E2181A;
 }

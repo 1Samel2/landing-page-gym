@@ -1,3 +1,5 @@
+/* import React, { useEffect, useRef } from "react"; */
+import list from "./List-sumary.jsx";
 import "./App.css";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import Logo from "./assets/logo-fabrica.png";
@@ -7,9 +9,20 @@ import Grafico from "./assets/grafico.png";
 import Vector from "./assets/vector.png";
 import Hero from "./assets/hero.svg";
 import Investimento from "./assets/img.svg";
-import Carousel from "./carousel.jsx";
+import Carousel from "./Carousel.jsx";
 
 function App() {
+  /* const summaryRef = useRef(null);
+
+  useEffect(() => {
+    summaryRef.current.addEventListener("toggle", handleToggle);
+  }, []);
+
+  const handleToggle = () => {
+    summaryRef.current
+      .querySelector(".paragraph-sumary")
+      .style.transition = "max-height 0.25s ease-in-out";
+  }; */
   return (
     <main>
       <div className="div-principal">
@@ -137,7 +150,7 @@ function App() {
         </p>
 
         <div className="align-carousel">
-          <Carousel />
+          <Carousel /> {/* Erro de react versão desatualizada */}
         </div>
       </section>
 
@@ -226,36 +239,22 @@ function App() {
       <div className="container-questions">
         <div>
           <div>
-            <div class="top-text">Faq</div>
+            <div className="top-text">Faq</div>
           </div>
           <p className="fre">Perguntas Frequentes:</p>
         </div>
 
-        <div className="box-sumary">
-          <details>
-            <summary>Qual tempo de participação do método?</summary>
-            <p>Epcot is a theme park at Walt Disney World Resort</p>
-          </details>
-          <details>
-            <summary>Quais formas de pagamento?</summary>
-            <p>Epcot is a theme park at Walt Disney World Resort</p>
-          </details>
-          <details>
-            <summary>
-              Nunca pratiquei exercícios físicos, posso participar?
-            </summary>
-            <p>Epcot is a theme park at Walt Disney World Resort</p>
-          </details>
-          <details>
-            <summary>
-              Estou acima do peso, consigo acompanhar os módulos?
-            </summary>
-            <p>Epcot is a theme park at Walt Disney World Resort</p>
-          </details>
+        <div>
+          {list.map((item) => (
+            <details key={item.id}>
+              <summary>{item.title}</summary>
+              <p className="paragraph-sumary">{item.paragraph}</p>
+            </details>
+          ))}
         </div>
       </div>
     </main>
   );
 }
 
-export default App;
+export default App
