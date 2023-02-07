@@ -1,4 +1,4 @@
-<img width="100%" height="100%" src="./assets/whatsAppImage2023-02-06.jpeg" alt="imagem do back-end"/> 
+<img width="100%" height="100%" src="./img/lading-page.jpeg" alt="imagem do back-end"/> 
 
 
 
