@@ -14,7 +14,7 @@ export default function App() {
     <>
       <Swiper
         slidesPerView={3}
-        spaceBetween={30}
+        spaceBetween={0}
         pagination={{
           clickable: true,
         }}
@@ -22,7 +22,7 @@ export default function App() {
         modules={[Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide>
+        <SwiperSlide >
           <div className="box-content">
             <div className="align-text-img">
               <img src={Home} alt="img" />
@@ -35,7 +35,7 @@ export default function App() {
               Lorem ipsum dolor sit amet consectetur. Vel ut nam mi velit. Lorem
               ornare accumsan faucibus cras. Porta varius bibendum.
             </p>
-            <img src={Personal} alt="personal" />
+            <img className="personal" src={Personal} alt="personal" />
           </div>
         </SwiperSlide>
 
@@ -52,12 +52,12 @@ export default function App() {
               Lorem ipsum dolor sit amet consectetur. Vel ut nam mi velit. Lorem
               ornare accumsan faucibus cras. Porta varius bibendum.
             </p>
-            <img src={Personal} alt="personal" />
+            <img className="personal" src={Personal} alt="personal" />
           </div>
         </SwiperSlide>
 
         <SwiperSlide>
-          <div className="box-content">y
+          <div className="box-content">
             <div className="align-text-img">
               <img src={Home2} alt="img" />
               <p className="text-slider">
@@ -69,7 +69,24 @@ export default function App() {
               Lorem ipsum dolor sit amet consectetur. Vel ut nam mi velit. Lorem
               ornare accumsan faucibus cras. Porta varius bibendum.
             </p>
-            <img src={Personal} alt="personal" />
+            <img className="personal" src={Personal} alt="personal" />
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div className="box-content">
+            <div className="align-text-img">
+              <img src={Home2} alt="img" />
+              <p className="text-slider">
+                Leonardo <span>FISICULTORISTA</span>
+              </p>
+            </div>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Vel ut nam mi velit. Lorem
+              ornare accumsan faucibus cras. Porta varius bibendum.
+            </p>
+            <img className="personal" src={Personal} alt="personal" />
           </div>
         </SwiperSlide>
       </Swiper>
